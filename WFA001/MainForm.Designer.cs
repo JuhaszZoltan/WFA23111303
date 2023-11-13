@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            lblHello = new Label();
+            SuspendLayout();
+            // 
+            // lblHello
+            // 
+            lblHello.BackColor = Color.LightCoral;
+            lblHello.Font = new Font("Segoe UI", 30F, FontStyle.Bold, GraphicsUnit.Point);
+            lblHello.Location = new Point(14, 9);
+            lblHello.Margin = new Padding(5, 0, 5, 0);
+            lblHello.Name = "lblHello";
+            lblHello.Size = new Size(419, 126);
+            lblHello.TabIndex = 0;
+            lblHello.Text = "Hello, World!";
+            lblHello.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // MainForm
+            // 
+            AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            ClientSize = new Size(447, 144);
+            Controls.Add(lblHello);
+            Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            Margin = new Padding(5, 6, 5, 6);
+            Name = "MainForm";
+            Text = "Hello, World!";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label lblHello;
     }
 }
